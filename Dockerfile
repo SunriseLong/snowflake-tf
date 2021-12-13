@@ -5,8 +5,11 @@ ARG TERRAFORM_VERSION=1.0.11
 RUN \
 	# Update
 	apt-get update -y && \
+	# git
+	apt-get -y install git && \
 	# Install dependencies
 	apt-get install unzip wget -y
+	
 
 ################################
 # Install Terraform
